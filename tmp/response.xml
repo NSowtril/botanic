@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<speciesSearchReport 
+    xsi:schemaLocation="http://services.natureserve.org/docs/schemas/biodiversityDataFlow/1 http://services.natureserve.org/docs/schemas/biodiversityDataFlow/1/" 
+    xmlns="http://services.natureserve.org/docs/schemas/biodiversityDataFlow/1" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    schemaVersion="1.1">
+	<conditions>
+		<match>
+			<searchTerm>Ruby*</searchTerm>
+		</match>
+	</conditions>
+	<speciesSearchResultList>
+    	<speciesSearchResult uid="ELEMENT_GLOBAL.2.108520">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.108520</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.108520</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Sympetrum rubicundulum</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Meadowhawk</commonName>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.108854">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.108854</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.108854</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Phragmatobia fuliginosa</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Tiger Moth</commonName>
+			<taxonomicComments>Following Lafontaine and Schmidt (2010), the traditional Arctiidae have been transferred to the family Erebidae as a subfamily (Arctiinae), with former subfamilies such as Lithosiinae now treated as tribes.  The circumscription of Arctiinae remains virtually identical to recent circumscriptions of Arctiidae, but circumscriptions of some taxa within the Arctiinae have changed.</taxonomicComments>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.110704">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.110704</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.110704</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Orthosia rubescens</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Quaker Moth</commonName>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.107004">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.107004</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.107004</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Xestia oblata</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Dart Moth</commonName>
+		</speciesSearchResult>
+		<speciesSearchResult uid="ELEMENT_GLOBAL.2.102517">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.102517</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.102517</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Regulus calendula</jurisdictionScientificName>
+	   		<commonName language="en">Ruby-crowned Kinglet</commonName>
+			<taxonomicComments>Formerly in family Muscicapidae; returned to Regulidae by AOU (1997). See Banks and Browning (1995) for brief comments on generic nomenclature.</taxonomicComments>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.105069">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.105069</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.105069</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Archilochus colubris</jurisdictionScientificName>
+	   		<commonName language="en">Ruby-throated Hummingbird</commonName>
+			<taxonomicComments>Appears to constitute a superspecies with &lt;i&gt;A. alexandri&lt;/i&gt; (AOU 1998).</taxonomicComments>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.109877">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.109877</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.109877</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Papilio anchisiades</jurisdictionScientificName>
+	   		<commonName language="en">Ruby-spotted Swallowtail</commonName>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.161745">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.161745</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.161745</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Hieracium rusbyi</jurisdictionScientificName>
+	   		<commonName language="en">Ruby's Hawkweed</commonName>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.140094">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.140094</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.140094</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Desmanthus bicornutus</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Bundleflower</commonName>
+			<taxonomicComments>A distinct species in a genus of about 40 species in the warmer parts of the Americas. Recognized by Kartesz in his 1999 Floristic Synthesis.</taxonomicComments>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.150231">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.150231</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.150231</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Penstemon procerus var. modestus</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Mountain Beardtongue</commonName>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.152036">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.152036</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.152036</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Primula capillaris</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Mountain Primrose</commonName>
+			<taxonomicComments>Distinct, species in genus with few western North American taxa.</taxonomicComments>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.151635">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.151635</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.151635</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Oxytropis riparia</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Valley Crazyweed</commonName>	   <taxonomicComments>From Central Asia; formerly known as Astragalus rubyi.</taxonomicComments>	   	</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.156097">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.156097</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.156097</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Eriogonum kingii</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Mountain Buckwheat</commonName>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.140546">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.140546</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.140546</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Potentilla atrosanguinea</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Cinquefoil</commonName>
+			<taxonomicComments>In North America, &lt;i&gt;Potentilla atrosanguinea&lt;/i&gt; was available in the horticultural trade, reported in New Brunswick and did not become naturalized.</taxonomicComments>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.141733">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.141733</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.141733</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Eriogonum argophyllum</jurisdictionScientificName>
+	   		<commonName language="en">Ruby Valley Buckwheat</commonName>
+		</speciesSearchResult>
+      	<speciesSearchResult uid="ELEMENT_GLOBAL.2.133980">
+	   		<globalSpeciesUid>ELEMENT_GLOBAL.2.133980</globalSpeciesUid>
+	   		<natureServeExplorerURI>http://explorer.natureserve.org/servlet/NatureServe?searchSpeciesUid=ELEMENT_GLOBAL.2.133980</natureServeExplorerURI>
+	   	   	<jurisdictionScientificName>Hymenoxys rusbyi</jurisdictionScientificName>
+	   		<commonName language="en">Ruby's Bitterweed</commonName>
+		</speciesSearchResult>
+  	</speciesSearchResultList>
+</speciesSearchReport>

@@ -1,0 +1,4 @@
+include botanic_website/schema.sql
+graft botanic_website/static
+graft botanic_website/templates
+global-exclude *.py
