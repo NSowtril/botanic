@@ -1,28 +1,146 @@
 {% extends 'base.html' %}
 
-{% block header %}
-  <h1>{% block title %}Posts{% endblock %}</h1>
-  {% if g.user %}
-    <a class="action" href="{{ url_for('blog.create') }}">New</a>
-  {% endif %}
+{% block header_bottom_grids %}
+ <!--首页导航-->
+			<div class="header-bottom-grids text-center">
+				<div class="header-bottom-grid1">
+					<span class="glyphicon glyphicon-leaf"></span>
+					<h4>Claritas est etiam</h4>
+				</div>
+				<div class="header-bottom-grid2">
+					<span class="glyphicon glyphicon-certificate"></span>
+					<h4>Claritas est etiam</h4>
+				</div>
+				<div class="header-bottom-grid3">
+					<span class="glyphicon glyphicon-tree-deciduous"></span>
+					<h4>Claritas est etiam</h4>
+				</div>
+				<div class="header-bottom-grid4">
+					<span class="glyphicon glyphicon-screenshot"></span>
+					<h4>Claritas est etiam</h4>
+				</div>
+				<div class="clearfix"></div>
+                <div class="clearfix"></div>
+                <div class="clearfix"></div>
+
+			</div>
+            <!--//首页导航-->
+
+  <!--<form method="post">-->
+    <!--<label for="username">Username</label>-->
+    <!--<input name="username" id="username" required>-->
+    <!--<label for="password">Password</label>-->
+    <!--<input type="password" name="password" id="password" required>-->
+    <!--<input type="submit" value="Log In">-->
+  <!--</form>-->
 {% endblock %}
 
 {% block content %}
-  {% for post in posts %}
-    <article class="post">
-      <header>
-        <div>
-          <h1>{{ post['title'] }}</h1>
-          <div class="about">by {{ post['username'] }} on {{ post['created'].strftime('%Y-%m-%d') }}</div>
-        </div>
-        {% if g.user['id'] == post['author_id'] %}
-          <a class="action" href="{{ url_for('blog.update', id=post['id']) }}">Edit</a>
-        {% endif %}
-      </header>
-      <p class="body">{{ post['body'] }}</p>
-    </article>
-    {% if not loop.last %}
-      <hr>
-    {% endif %}
-  {% endfor %}
+	<!-- content-section-starts -->
+	<div class="services">
+		<div class="container">
+			<div class="services-top-grids text-center">
+				<div class="secvice-top-grid-1">
+					<h3>Mirum est notare</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="icon1">
+						<i class="icon1"></i>
+					</div>
+				</div>
+				<div class="secvice-top-grid-2">
+					<h3>Mirum est notare</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="icon1">
+						<i class="icon2"></i>
+					</div>
+				</div>
+				<div class="secvice-top-grid-3">
+					<h3>Mirum est notare</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="icon1">
+						<i class="icon3"></i>
+					</div>
+				</div>
+				<div class="secvice-top-grid-4">
+					<h3>Mirum est notare</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<div class="icon1">
+						<i class="icon4"></i>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="services-bottom-grids">
+				<div class="col-md-3 services-bottom-left">
+					<img src="../../static/images/s1.jpg" alt="" />
+				</div>
+				<div class="col-md-6 services-bottom-middle text-center">
+					<h3>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum  </h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+				</div>
+				<div class="col-md-3 services-bottom-right">
+					<img src="../../static/images/s2.jpg" alt="" />
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<div class="items">
+		<div class="container">
+			<div class="col-md-4 item-1">
+				<img src="../../static/images/i1.jpg" alt="" />
+				<h3>Duis autem vel eum</h3>
+			</div>
+			<div class="col-md-4 item-2">
+				<img src="../../static/images/i2.jpg" alt="" />
+				<h3>Duis autem vel eum</h3>
+			</div>
+			<div class="col-md-4 item-3 text-center">
+				<h4>Claritas est etiam processus dynamicus</h4>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+    <!-- testimonials -->
+	<div class="testimonials">
+		<div class="container">
+			<div class="testimonial-info">
+				<h3>Testimonials</h3>
+				<h5>Cras porttitor imperdiet volutpat nulla malesuada lectus eros <span>ut convallis felis consectetur ut </span></h5>
+			</div>
+			<div class="testimonial-grids">
+				<div class="testimonial-grid">
+					<p><span>"</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum iaculis diam quis sodales. Vestibulum eu dui tellus. In viverra porttitor auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas<span> "</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //testimonials -->
+	<!-- news -->
+	<div class="news" id="news">
+		<div class="container">
+			<div class="news-text">
+				<h3>News</h3>
+				<h5>Cras porttitor imperdiet volutpat nulla malesuada lectus eros <span>ut convallis felis consectetur ut </span></h5>
+			</div>
+			<div class="news-grids">
+                {% for n in search %}
+                <div class="col-md-3 news-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+                    <a href="single.html">key: {{ n['key'] }}</a>
+                    <span>scientificName: {{ n['scientificName'] }}</span>
+                    <a class="mask" href="single.html"><img src="../../static/images/img2.jpg" class="img-responsive zoom-img" alt="" /></a>
+                    <div class="news-info">
+						<p>descriptions: {{ n['descriptions']['description'] }}</p>
+						<a class="button" href="single.html"><img src="../../static/images/read.png" alt=""></a>
+					</div>
+                </div>
+                {% endfor %}
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!-- //news -->
+	<!-- content-section-ends -->
 {% endblock %}

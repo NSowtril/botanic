@@ -1,4 +1,4 @@
-# website/__init__.py: 程序包的构造文件
+# 程序包的构造文件
 import os
 from flask import Flask
 
@@ -33,8 +33,15 @@ def create_app(test_config=None):
     db.init_app(app)
 
     # 导入并注册蓝图
-    from . import auth, blog
-    app.register_blueprint(auth.bp, blog.bp)
+    # from botanic_website.views import auth
+    # app.register_blueprint(auth.bp)
+    #
+    # from botanic_website.views import blog
+    # app.register_blueprint(blog.bp)
+    # app.add_url_rule('/', endpoint='index')
+
+    from botanic_website.views import plants
+    app.register_blueprint(plants.bp)
     app.add_url_rule('/', endpoint='index')
 
     return app

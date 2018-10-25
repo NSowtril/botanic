@@ -1,5 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Niconne);
+/*@import url(../fonts/Oswald.css);*/
+/*@import url(../fonts/Niconne.css);*/
+
 body{
 	padding:0;
 	margin:0;
@@ -55,7 +56,7 @@ label{
 .home{
 	float:left;
 	width:7%;
-	background: rgba(158, 147, 107, 0.51);
+	background: rgba(118, 89, 60, 0.66);
 	padding: 2.5em 2em;
 }
 span.glyphicon.glyphicon-home {
@@ -168,7 +169,7 @@ i.googlepluse{
 	color:#83774A;
 }
 .header-top {
-	background: rgba(255, 255, 255, 0.32);
+	background: rgba(51, 51, 51, 0.72);
 	padding: 2em 30px;
 	float: left;
 	width: 92%;
@@ -195,7 +196,7 @@ span.glyphicon.glyphicon-leaf,span.glyphicon.glyphicon-certificate,span.glyphico
 	padding:0.4em 0;
 }
 .header-bottom-grid1{
-	background:rgba(132, 117, 78, 0.76);	
+	/*background:rgba(132, 117, 78, 0.76);*/
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -221,7 +222,7 @@ span.glyphicon.glyphicon-leaf,span.glyphicon.glyphicon-certificate,span.glyphico
 	transition: 0.8s;
 }
 .header-bottom-grid2{
-	background:rgba(166, 25, 46, 0.57);	
+	/*background:rgba(166, 25, 46, 0.57);	*/
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -247,7 +248,7 @@ span.glyphicon.glyphicon-leaf,span.glyphicon.glyphicon-certificate,span.glyphico
 	transition: 0.8s;
 }
 .header-bottom-grid3{
-	background:rgba(222, 203, 165, 0.57);
+	/*background:rgba(222, 203, 165, 0.57);*/
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -273,7 +274,7 @@ span.glyphicon.glyphicon-leaf,span.glyphicon.glyphicon-certificate,span.glyphico
 	-ms-transition: 0.5s all;	
 }
 .header-bottom-grid4{
-	background:rgba(0, 0, 0, 0.48);	
+	/*background:rgba(0, 0, 0, 0.48);	*/
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -3321,3 +3322,5 @@ span.menu {
 		padding: 2em 0;
 	}
 }
+
+body, html,#map {width: 100%;height: 100%;overflow: hidden;margin:0;}*/

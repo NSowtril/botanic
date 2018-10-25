@@ -12,7 +12,6 @@ with open(os.path.join(os.path.dirname(__file__), 'data.sql'), 'rb') as f:
 @pytest.fixture
 def app():
     db_fd, db_path = tempfile.mkstemp()  # 创建并打开一个临时文件，返回该文件对象和路径
-
     app = create_app({
         'TESTING': True,
         'DATABASE': db_path,

@@ -1,5 +1,5 @@
 import httplib2
-from 暂存.global_functions import parse_xml_str
+from tmp.global_functions import parse_xml_str
 
 ns_access_key_id = "72ddf45a-c751-44c7-9bca-8db3b4513347"
 http = httplib2.Http()

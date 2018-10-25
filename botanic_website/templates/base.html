@@ -1,26 +1,92 @@
 <!--基础布局-->
-<!--应用中每一个页面主体不同，但是基本布局相同。每个模板会扩展同一个基础模板并重载相应的小节-->
 <!doctype html>
+
+<head>
+    <title>Home</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css" />
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <!-- 自定义样式 -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Gardening Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfont-->
+    <link href="../static/fonts/Oswald.css" rel="stylesheet" type="text/css" />
+    <link href="../static/fonts/Niconne.css" rel="stylesheet" type="text/css" />
+
+    <!--/script-->
+    <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
+				});
+			});
+    </script>
+	{% block header %}{% endblock %}
+</head>
 <title>{% block title %}{% endblock %} - Flaskr</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<nav>
-  <h1>Flaskr</h1>
-  <ul>
-    {% if g.user %}
-      <li><span>{{ g.user['username'] }}</span>
-      <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
-    {% else %}
-      <li><a href="{{ url_for('auth.register') }}">Register</a>
-      <li><a href="{{ url_for('auth.login') }}">Log In</a>
-    {% endif %}
-  </ul>
-</nav>
+
+<div class="header-banner">
+		<div class="container">
+			<div class="home">
+                <!--<a href="index.html"><span class="glyphicon glyphicon-home"></span></a>-->
+                <a href="{{ url_for('index')}}"><span class="glyphicon glyphicon-home"></span></a>
+			</div>
+			<div class="header-top">
+				<div class="top-menu">
+					<ul>
+					    <nav class="cl-effect-13">
+						<li><a href="">About</a></li>
+						<li><a href="">Gallery</a></li>
+						<li><a class="scroll" href="#news">News</a></li>
+						<li><a href="">Typo</a></li>
+						<li><a href="">Contact</a></li>
+					    </nav>
+					</ul>
+				</div>
+                <div class="search" >
+                    <form method="post" enctype=multipart/form-data>
+                        <input type="file" name="image">
+                        <!--<label for="search">keywords</label><input type="search" name="q" id="search" >-->
+                        <input type="submit" value="Search">
+                    </form>
+				</div>
+				<!-- script for menu -->
+					<script>
+						$( "span.menu" ).click(function() {
+						$( ".top-menu ul" ).slideToggle( 300, function() {
+						 // Animation complete.
+						});
+						});
+					</script>
+				<!-- //script for menu -->
+				<div class="clearfix"></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="banner-info text-center">
+				<h1><a href="{{ url_for('index')}}">Botanic Garden</a></h1>
+			</div>
+             {% block header_bottom_grids %}{% endblock %}
+		</div>
+	</div>
+	<!-- header-section-ends -->
+
 <section class="content">
-  <header>
-    {% block header %}{% endblock %}
-  </header>
-  {% for message in get_flashed_messages() %}
-    <div class="flash">{{ message }}</div>
-  {% endfor %}
-  {% block content %}{% endblock %}
+  <!--<header>-->
+
+  <!--</header>-->
+  <!--{% for message in get_flashed_messages() %}-->
+    <!--<div class="flash">{{ message }}</div>-->
+  <!--{% endfor %}-->
 </section>
+
+{% block content %}{% endblock %}}
+
+    <!-- header-section-starts -->
+
+
+
+
+
