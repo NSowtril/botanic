@@ -7,6 +7,7 @@ from werkzeug.exceptions import abort
 import base64
 import urllib
 import xml.etree.ElementTree as ET
+
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
 
@@ -91,7 +92,7 @@ def gbif_species_match(name=None, rank=None, kingdom=None, phylum=None, _class=N
     if name is None:
         error = 'name required.'
     else:
-        url = append_url_param(url, "name", name)
+        url = append_url_param(url, "name", name.capitalize())
         if rank is not None:
             if rank not in RANK:
                 error = 'Invalid rank.'
@@ -173,9 +174,11 @@ def ns_global_species(uid=None):
 
     return results
 
+
 ns_tag_prefix = '{http://services.natureserve.org/docs/schemas/biodiversityDataFlow/1}'
+ns_dc_tag_prefix = '{http://purl.org/dc/terms/}'
 def rm_ns_tag_prefix(tag):
-    return tag.replace(ns_tag_prefix, '')
+    return tag.replace(ns_tag_prefix, '').replace(ns_dc_tag_prefix, '')
 def add_ns_tag_prefix(tag):
     return ns_tag_prefix+tag
 
@@ -203,24 +206,21 @@ def ns_species_images(uid=None, scientificName=None, includeSynonyms='N', common
     return root
 
 
-# 支持学名和拉丁名查询
-# nmae: 植物名称，拉丁学名或中文名
-# ntype: chname-中文名，sname-拉丁学名
-def plant_nsdc_image(name=None, ntype="chname"):
-    NTYPE = {'chanem', 'sname'}
-    url = "http://www.plant.csdb.cn/api.php?"
+def ns_species_search(name=None):
+    url = "https://services.natureserve.org/idd/rest/ns/v1/globalSpecies/list/nameSearch?NSAccessKeyId=%s" % NSAccessKeyId
     error = None
 
     if name is None:
-        error = 'plant name required.'
-    if ntype not in NTYPE:
-        error = 'Invalid ntype.'
+        error = 'name required.'
 
     if error is not None:
         abort(404, error)
 
+    name = '*'+name+'*'
+    url = url + "&name=%s" % (name)
+
     response, content = http.request(url, 'GET')
-    root = ET.fromstring(content.decode('utf-8'))
+    root = ET.fromstring(content)
 
     return root
 
@@ -335,10 +335,6 @@ def get_baidu_access_token():
     }
     access_token = json.loads(http.request(bidu_ai_host, 'POST', None, headers)[1].decode('utf-8'))['access_token']
     return access_token
-
-
-
-
 
 
 # 百度植物图像识别

@@ -3315,7 +3315,7 @@ span.menu {
 	.cmnt-icon-right {
 		width: 77%;
 	}
-	.comments-info.cmnts-mddl {
+	.comments-info.cmnts-mddl { d
 		margin: 3em 0;
 	}
 	.get-in-touch {
@@ -3323,4 +3323,4 @@ span.menu {
 	}
 }
 
-body, html,#map {width: 100%;height: 100%;overflow: hidden;margin:0;}*/
+/*body, html,#map {width: 100%;height: 100%;overflow: hidden;margin:0;}*/

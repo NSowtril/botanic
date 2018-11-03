@@ -1,6 +1,9 @@
 from botanic_website.views.apis import *
+
 import logging
 logging.basicConfig(level=logging.DEBUG)
+
+import json
 
 
 # def test_gbif_species():
@@ -153,7 +156,7 @@ class Plant(object):
         self.distributions = {}
 
     def from_json_result(self, result):
-        NAMES = ['scientificName', 'canonicalName']
+        NAMES = ['scientificName', 'canonicalName', 'commonName']
         CLASSIFICATION = ['kingdom', 'phylum', 'class', 'order', 'family', 'genus', 'species']
         if 'rank' in result.keys():
             self.rank = result['rank']
@@ -177,11 +180,42 @@ def test_comb():
     offset = 0
     r1 = gbif_species(offset=offset)
     # log.debug(r1)
-    log.debug('endOfRecords: %s', r1['endOfRecords'])
+    # log.debug('endOfRecords: %s', r1['endOfRecords'])
     for r in r1['results']:
         plant = Plant()
         plant.from_json_result(r)
-        log.debug(''.join(['\n %-10s: %-10s ' % item for item in plant.__dict__.items()]))
-        log.debug(rm_ns_tag_prefix(ns_species_images(commonName='rose').tag))
-        plant_info.append(plant)
+        # log.debug(''.join(['\n %-10s: %-10s ' % item for item in plant.__dict__.items()]))
+
+        # root = ns_species_images(scientificName=('*'+plant.names['scientificName']+'*').replace(' ', '%20'))
+        # for image in root:
+        #     # log.debug('=========================================')
+        #
+        #     # log.debug(image.tag)
+        #     # log.debug(    ' | 1. ====[ images/'+rm_ns_tag_prefix(image.tag)+': '+image.text)
+        #     for speciesSearchResultList in image:
+        #         if 'identifier' in child.tag:
+        #             plant.images['default'] = child.text
+        #         if 'isVersionOf' in child.tag:
+        #             plant.images['thumbnail'] = child.text
+        #         if 'commonName' in child.tag:
+        #             plant.names['commonName'] = child.text
+        #
+        #     if 'image' in image.tag:
+        #         log.debug(plant.__dict__.items())
+        #         break
+
+        # img = search_unplash_photos(plant.names['scientificName'])
+        # log.debug(img)
+        # img = get_unsplash_random_photos(query=plant.names['scientificName']+" plant")
+        # log.debug(img)
+
+        # log.debug('1')
+        # root = ns_species_search('Lisa')
+        # log.debug('2')
+        # speciesSearchResultList = root.find(add_ns_tag_prefix('speciesSearchResultList'))
+        # log.debug('3')
+        # for speciesSearchResult in speciesSearchResultList:
+        #     log.debug(speciesSearchResult.tag)
+        #     break
+        # plant_info.append(plant)
         break

@@ -34,28 +34,28 @@
 			<div class="services-top-grids text-center">
 				<div class="secvice-top-grid-1">
 					<h3>Mirum est notare</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p style="height: 80px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 					<div class="icon1">
 						<i class="icon1"></i>
 					</div>
 				</div>
 				<div class="secvice-top-grid-2">
 					<h3>Mirum est notare</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p style="height: 80px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 					<div class="icon1">
 						<i class="icon2"></i>
 					</div>
 				</div>
 				<div class="secvice-top-grid-3">
 					<h3>Mirum est notare</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<p style="height: 80px">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
 					<div class="icon1">
 						<i class="icon3"></i>
 					</div>
 				</div>
 				<div class="secvice-top-grid-4">
-					<h3>Mirum est notare</h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					<h3>Search</h3>
+					<p style="height: 80px">Search plants information by text, imgage or speech.</p>
 					<div class="icon1">
 						<i class="icon4"></i>
 					</div>
@@ -67,8 +67,8 @@
 					<img src="../../static/images/s1.jpg" alt="" />
 				</div>
 				<div class="col-md-6 services-bottom-middle text-center">
-					<h3>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum  </h3>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+					<h3>A mash-up website applying APIs provided by<br>GBIF, Baidu AI, NatureServe, Unsplash...</h3>
+					<p>Individual project for Web Services and SOA<br>Devleoped by Chudi LAN (1552687)<br>Oct. 2018.</p>
 				</div>
 				<div class="col-md-3 services-bottom-right">
 					<img src="../../static/images/s2.jpg" alt="" />
@@ -81,25 +81,25 @@
 		<div class="container">
 			<div class="col-md-4 item-1">
 				<img src="../../static/images/i1.jpg" alt="" />
-				<h3>Duis autem vel eum</h3>
+				<h3>Gardening Knowledge</h3>
 			</div>
 			<div class="col-md-4 item-2">
 				<img src="../../static/images/i2.jpg" alt="" />
-				<h3>Duis autem vel eum</h3>
+				<h3>Follow us</h3>
 			</div>
 			<div class="col-md-4 item-3 text-center">
-				<h4>Claritas est etiam processus dynamicus</h4>
-				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+				<h4>Map Service</h4>
+				<p>Check out the distributions of botanical samples.</p>
 			</div>
 			<div class="clearfix"></div>
 		</div>
 	</div>
 
-    <!-- testimonials -->
+    <!-- find out more -->
 	<div class="testimonials">
 		<div class="container">
 			<div class="testimonial-info">
-				<h3>Testimonials</h3>
+				<h3>Browsing around</h3>
 				<h5>Cras porttitor imperdiet volutpat nulla malesuada lectus eros <span>ut convallis felis consectetur ut </span></h5>
 			</div>
 			<div class="testimonial-grids">
@@ -111,15 +111,15 @@
 	</div>
 	<!-- //testimonials -->
 
-	<!-- news -->
+	<!-- browse -->
 	<div class="news" id="news">
 		<div class="container">
 			<div class="news-text">
-				<h3>News</h3>
-				<h5>Cras porttitor imperdiet volutpat nulla malesuada lectus eros <span>ut convallis felis consectetur ut </span></h5>
+				<h3>Plants</h3>
+				<h5>Check information about plants you might be interested in<span>ut convallis felis consectetur ut </span></h5>
 			</div>
 			<div class="news-grids">
-                {% for n in search %}
+                {% for n in seach %}
                 <div class="col-md-3 news-grid wow bounceIn animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
                     <a href="single.html">canonicalName: {{ n['canonicalName'] }}</a>
                     <span>key: {{ n['key'] }}</span>

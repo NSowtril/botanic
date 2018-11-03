@@ -8,12 +8,29 @@ from . import apis
 
 bp = Blueprint('plants', __name__,)
 
+@bp.before_request
+def before_request():
+    if True:
+        print("[ Headers ]", request.headers)
+        print("[ Path ]", request.path)
+        print("[ Args ]", request.args)
+        print("[ Data ]", request.data)
+        print("[ Form ]", request.form)
+        print("[ Access Route ]", request.access_route)
+        print("[ Files ]", request.files)
+
+def search_by_name(name):
+    error = None
+    if name is None:
+        error = 'name required.'
+
+    if error is not None:
+        abort(404, error)
 
 @bp.route('/')
 def index():
 
     return render_template('index.html')
-
 
 
 @bp.route('/plants/single', methods=('GET', ))
@@ -22,24 +39,4 @@ def single():
     return render_template('index.html')
 
 
-# @bp.route('/search', methods=('POST', ))
-# def search():
-#     image = session.get('image')
-#     text = session.get('text')
-#     speech = session.get('speech')
-#     error = None
-#
-#     if image is not None:
-#         return None
-#     elif text is not None:
-#         return None
-#     elif speech is not None:
-#         return None
-#     else:
-#         error = 'No input for search.'
-#
-#     if error is not None:
-#         flash(error)
-#
-#     return None
 

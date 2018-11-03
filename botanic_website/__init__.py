@@ -10,6 +10,10 @@ def create_app(test_config=None):
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'botanic_website.sqlite'),
     )
+    app.debug = True
+    app.jinja_env.auto_reload = True
+    app.config.from_pyfile('../config.py')
+    # print(app.config)
 
     if test_config is None:
         # load the instance config, if it exists, when not testing
