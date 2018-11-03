@@ -2,6 +2,7 @@ import httplib2
 import json
 # from flask import session, flash, request
 from werkzeug.exceptions import abort
+import xmltodict
 
 
 import base64
@@ -220,9 +221,17 @@ def ns_species_search(name=None):
     url = url + "&name=%s" % (name)
 
     response, content = http.request(url, 'GET')
-    root = ET.fromstring(content)
+    # root = ET.fromstring(content)
 
-    return root
+    namespaces = {
+        'xsi:schemaLocation="http://services.natureserve.org/docs/schemas/biodiversityDataFlow/1  http://services.natureserve.org/docs/schemas/biodiversityDataFlow/1/': None,
+        'http://services.natureserve.org/docs/schemas/biodiversityDataFlow/1': None,
+        'http://www.w3.org/2001/XMLSchema-instance': None
+    }
+
+    dict = xmltodict.parse(content, process_namespaces=True, namespaces=namespaces)
+
+    return dict
 
 
 PROVINCES = ["北京", "天津", "河北", "山西", "内蒙古", "辽宁", "吉林", "黑龙江", "上海", "江苏", "浙江", "安徽", "福建", "江西",

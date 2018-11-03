@@ -5,8 +5,10 @@ from flask import (
 
 from werkzeug.exceptions import abort
 from . import apis
+import xmltodict
 
 bp = Blueprint('plants', __name__,)
+
 
 @bp.before_request
 def before_request():
@@ -18,6 +20,8 @@ def before_request():
         print("[ Form ]", request.form)
         print("[ Access Route ]", request.access_route)
         print("[ Files ]", request.files)
+        # print(xmltodict.parse(request.data)['xml']['From'])
+
 
 def search_by_name(name):
     error = None
@@ -26,6 +30,7 @@ def search_by_name(name):
 
     if error is not None:
         abort(404, error)
+
 
 @bp.route('/')
 def index():
